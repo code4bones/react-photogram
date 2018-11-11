@@ -1,0 +1,156 @@
+.debug-log {
+    color:white;
+}
+
+.debug-error {
+    color:red;
+}
+
+.debug-warn {
+    color:yellow;
+}
+
+.debug-debug {
+    color:rgb(255,0,255);
+}
+
+.debug-info {
+    color:rgb(0,255,255);
+}
+
+
+.debug-console-object {
+    color:green;
+    font-weight:bold;
+}
+
+.debugConsole {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:5px;
+    z-index:9998;
+    height:0;
+    //display:none;
+    //visibility:hidden;
+}
+
+@keyframes slideIn {
+    from {height:0px;}
+    to   {height:30%;visibility:visible;}
+}
+
+.showConsole {
+    animation: slideIn .5s;
+    height:30%;
+    visibility:visible;
+}
+
+.debugVisible {
+    display:inline;
+    height:30%;
+}
+
+
+
+.hideConsole {
+    animation: slideOut .5s;
+    height:0px;
+    visibility:hidden;
+}
+
+@keyframes slideOut {
+    from {height:30%;visibility:visible;}
+    to   {height:0;}
+}
+
+.debugHidden {
+    display:none;
+    height:0px;
+}
+
+
+
+.debug-message {
+    border:1px solid red;
+    overflow-y:auto;
+    color:white;
+    pointer-events:auto;
+    background-color:rgba(0,0,0,.9);
+    height:100%;
+}
+
+.debug-console-button {
+    position:absolute;
+    top:1px;
+    width:26px;
+    height:26px;
+    z-index:9999;
+    //border-radius:5px;
+    margin-right:15px;
+    margin-top:10px;
+    cursor:pointer;
+    //border:1px solid rgba(80,80,80,.6);
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to   {opacity:1;visibility:visible;}
+}
+
+@keyframes fadeOut {
+    from {opacity:1;visibility:visible;}
+    to   {opacity:0;visibility:hidden;}
+}
+
+.buttonVisible {
+    animation:fadeIn .5s;
+    visibility:visible;
+}
+
+
+.buttonHidden {
+    animation:fadeOut .5s;
+    visibility:hidden;
+}
+
+
+.debug-close-button {
+    background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABBklEQVRIie2TsQ4BQRRFXyyiF6XNUqp8h0I0fowfUGlEyU/4AQVZIj5BguYojBj2zeysKBRutzP33fve7Lsif/wsgAioBfBqQFRUPAbWwAnoe3h9w1kDcah4E9jwxBUYKLwecLZ4O6AVYrAii4s9ien8ovBW73plxaOknFVFZAYMzffMnIXUZiZIgFTp7jGJ1jmmJsk1MCYxsHUIadgD7SDxD0yKi1smCXD0iB/zniXvp3REpO65b4hIt2Dfd5DdcxfUnHxLvLgJ7hDBfRVTx91LGH0GB494gj8nhxCDiUvc4rhMJiEGETC1itQ9J5uTOVDJNTDFFWAMLPDsuZlkCYyCxf94xw3eyrKeWCfjYQAAAABJRU5ErkJggg==') 100%;
+    right:0px;
+}
+
+.debug-clear-button {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABOUlEQVRIie2VvUoDURCFvxGxsBBLQbeItQoRK8EqT+ATWJo+voGtfaziI9jlGSy00UKwMAgpLCUJFhI5Fs7CernZv6iNHljuzpyZOTPLMhd+GFYmSNIesBq4X8zseu4OJPU0G72i/NwJJG0Dt8AVcBHQR8A+sGNmd3W7P/dOWxGu5Vw3r4ZlEg6Bs4DfAJaAAaBIbgN4A4YBd2JmlwCLEdE1YBl4jCR+GcJjUmwCr8BzTg5I6ksKuy2Ef65+6F+oWqgqcgUkJZK6kppudyR1/L3pXFJbANgC2sCB28f+4L62x9QWmBv/An9AILYqspjwuRJGbo8z3Mi5SSXF31gV755QNF22eBo7DblYkQc/TyUNSmo0/Lwv000iaZhzTc7Ck6T1sF70ypS0AuxS/BOkmAI3ZjYujPxufAAKOuQTfePC+wAAAABJRU5ErkJggg==') 100%;
+    right:64px;
+}
+
+.debug-minimize-console {
+    background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAYklEQVRIie3OIQ6AMAxG4deFI6AQnINrkOyUGO6ExiN/DFuKwWyK9FNL07wOQghWHpIMWIGxsXkCu5npNZWU1U8u3eRuTI0/92orfW314A9cHbu1NbjhBizA3Bg/nlYI4TdupOdZFOB8QZ4AAAAASUVORK5CYII=') 100% 8px;
+    right:28px;
+}
+
+.debug-restore-console {
+    top:unset;
+    bottom:5px;
+    right:0px;
+    background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABmJLR0QA/wD/AP+gvaeTAAAA7ElEQVRIie2VoU9CURTGf5+iI2ogYjCY2YgEqqNIsmAw2fkPzAb+FTIbiQgBRpLgZiAzgs35PoPXsb0hvidc0/vK2b33nO93zi0H/lECsH0FXETwfwMmkj4IoK7txPE0tH0MINsrYA08AcmBJ2sBN0BT0ohA7x8YAoDt++DfBjiKAflJBayAFbACth8sAU4i+ZdCTL4PU+Da9ksEWAV4B+bwNVkHGGQsPgUugfOM+QvgTtJrvh4B27WwMh5zF7P5023GZ8Bt6roaYt32Q+ptLGn2lyaw3cy5/nu/eWoHrAw0duWk9CxpmTE3vj4BKd3dbw7xj9EAAAAASUVORK5CYII=') 50% 50% no-repeat;
+    border:1px solid red;
+    background-color:rgba(0,0,0,.8);
+    width:34px;
+    height:32px;
+}
+
+
+
+.debug-clear-button:hover,
+.debug-close-button:hover,
+.debug-minimize-console:hover {
+    background-color:rgba(80,80,80,.8);
+    border:1px solid rgba(192,192,192,.8);
+}
+
+.debug-restore-console:hover {
+    background-color:rgba(0,0,0,.5);
+}

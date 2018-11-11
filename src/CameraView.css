@@ -1,13 +1,5 @@
-.errorMessage {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    padding:10px;
-    //height:10%;
-    background-color:red;
-    color:yellow;
-}
+
+
 
 .cameraView {
     position:relative;

@@ -7,7 +7,20 @@ import 'semantic-ui-css/semantic.min.css';
 import shutter_mp3 from './shutter.mp3';
 import shutter_ogg from './shutter.ogg';
 import 'antd/dist/antd.min.css';
+import DebugConsole from './DebugConsole';
 
+var theOBJECT = {
+        x:10,y:20,z:'Hello'
+}
+
+
+const debugConsole = new DebugConsole({
+     maxRows:20
+    ,stacked:true
+    ,prettyPrint:true
+    ,patch:['error','log','debug']
+    ,hotKeys:['`']
+});
 
 const FloatMenu = props => { 
     return (
@@ -39,7 +52,6 @@ export default class CameraView extends Component {
             ,videoWidth:props.cameraWidth
             ,videoHeight:props.cameraWidth * 0.75
         }
-        
         
         
         var info = this.load();
@@ -142,6 +154,10 @@ export default class CameraView extends Component {
     }
     
     flash() {
+        console.error("flash is error !");
+        console.warn("Hello WARINNG !");
+        //throw new Error('test');
+
         var rnd  = this.rndFlash.current;
         rnd.classList.add("flash");
         try {
