@@ -15,9 +15,6 @@
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
-    "test": "nwb test-react",
-    "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
   },
   "dependencies": {
     "antd": "^3.10.4",
@@ -37,11 +34,14 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   },
-  "author": "",
+  "author": "code4bones",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/code4bones/react-photogram.git",
   "keywords": [
-    "react-component"
+    "react-component",
+    "webcam",
+    "photo",
+    "snapshot"
   ]
 }
