@@ -1,0 +1,203 @@
+.errorMessage {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:10px;
+    //height:10%;
+    background-color:red;
+    color:yellow;
+}
+
+.cameraView {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.videoWrap {
+    position:absolute;
+    overflow:hidden;
+    background-color:black;
+    border-radius:4px;
+    box-shadow: 0px 5px 12px 0px #000;
+}
+
+
+.videoDiv {
+    position:absolute;
+    top:0px;
+    overflow:hidden;
+}
+
+.crop-area {
+  position: absolute;
+  top: 0px;
+  left:0px;
+  height: 100%;
+  width:100%;
+  z-index:500;
+  pointer-events:none;
+}
+
+.hole {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  
+  box-shadow: 0px 5px 12px 0px #000,
+            0px -5px 12px 200px #000;  
+  
+  z-index:99;
+  border-radius:3px;
+  pointer-events:none;
+  
+}
+
+.flash {
+    background-color:rgba(255,255,255,.4);
+}
+
+.rndFlash {
+    width:100%;
+    height:100%;
+}
+
+
+.no-preview {
+    visibility:hidden;
+    //display:none;
+}
+
+.shotsPane {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:400px;
+    height:400px;
+    background-color:rgba(255,255,255,1);
+    z-index:800;
+    overflow:auto;
+    margin-left:0px;
+    padding-left:15px;
+    padding-top:10px;
+    box-shadow: 0px 5px 12px 0px #000;
+    border-radius:4px;
+
+}
+
+.previewToggle {
+    position:absoulte;
+    padding-bottom:0px;
+    top:10px;
+    left:0px;
+    z-index:20;
+}
+
+.previewClose {
+    position:relative;
+    float:right;
+    top:10px;
+    right:0px;
+    z-index:20;
+}
+
+.previewItem {
+   // margin-top:-30px;
+    padding:5px;
+    //padding-top:-40px;
+    //box-shadow: 5px 0px 5px 0px #000;
+    //background-color:white;
+    cursor:pointer;
+}
+
+.previewImage {
+    box-shadow: 0px 5px 3px 2px #000;
+}
+
+.snap {
+    position:absolute;
+    left:400px;
+    top:10px;
+    background-color:green;
+    z-index:800;
+}
+
+.snapImg {
+    position:absolute;
+    z-index:-1;
+    left:0;
+    top:0;
+    width:96px;
+    height:128px;
+    //box-shadow: 0px 5px 12px 0px #000;
+    //border-radius:3px;
+    visibility:hidden;
+}
+
+.floatMenu {
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index:9999;
+    border-radius:10px;
+    color:white;
+    padding:5px 0px 5px 5px;
+    opacity:.2;
+    background-color:rgba(0,0,0,.5);
+    transition: opacity 0.3s, visibility 0.3s;
+} 
+
+.floatMenu:hover {
+    opacity:1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.dimmer {
+    background-color:rgba(0,0,0,.5);
+}
+
+.preview-dimmer {
+    background-color:rgba(0,0,0,.5);
+    position:absoulte;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:400;
+}
+
+/*
+.cutter {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:0px;
+    height:0px;
+    border:solid 1px black;
+    z-index:300;
+}
+
+.fore {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:50%;
+  z-index:100;
+  background-color:rgba(0,0,0,.5);
+  pointer-events:none;
+}
+
+
+.win {
+  position:absolute;
+  left:400px;
+  top:100px;
+  width:100px;
+  height:100px;
+  z-index:101;
+  background-color:red;
+  pointer-events:none;
+}
+*/

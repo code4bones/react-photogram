@@ -19,7 +19,16 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "antd": "^3.10.4",
+    "is-color-stop": "^1.1.0",
+    "react-dat-gui": "^1.0.2",
+    "react-draggable": "^3.0.5",
+    "react-modal-resizable-draggable": "^0.1.1-rc.13",
+    "react-rnd": "^9.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
