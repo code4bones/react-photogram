@@ -7,13 +7,10 @@ import 'semantic-ui-css/semantic.min.css';
 import shutter_mp3 from './shutter.mp3';
 import shutter_ogg from './shutter.ogg';
 import 'antd/dist/antd.min.css';
-import DebugConsole from './DebugConsole';
-
-var theOBJECT = {
-        x:10,y:20,z:'Hello'
-}
+//import DebugConsole from './DebugConsole';
 
 
+/*
 const debugConsole = new DebugConsole({
      maxRows:20
     ,stacked:true
@@ -21,6 +18,7 @@ const debugConsole = new DebugConsole({
     ,patch:['error','log','debug']
     ,hotKeys:['`']
 });
+*/
 
 const FloatMenu = props => { 
     return (
